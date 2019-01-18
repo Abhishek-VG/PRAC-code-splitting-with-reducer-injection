@@ -2,7 +2,10 @@ import React, { Component, Fragment } from 'react'
 import DesertImg from './desert.png';
 import { connect } from 'react-redux';
 import { desertAction } from '../../action/desertAction';
+import DesertReducer from '../../reducers/desertReducer';
+import { storeManager } from '../../utils/storeManager';
 
+storeManager.registerReducers({ DesertReducer })
 class Desert extends Component {
     render() {
         return (

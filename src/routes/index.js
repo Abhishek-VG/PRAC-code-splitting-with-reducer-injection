@@ -4,19 +4,20 @@ import React from 'react'
 // import Forest from '../pages/forest';
 // import CommonPage from '../pages';
 import Loadable from 'react-loadable';
+import { withRefreshedStore } from '../utils/storeManager';
 
 const Desert = Loadable({
-    loader: () => (import('../pages/desert')),
+    loader: () => withRefreshedStore(import('../pages/desert')),
     loading: () => <div>Loading...</div>,
 });
 
 const Forest = Loadable({
-    loader: () => (import('../pages/forest')),
+    loader: () => withRefreshedStore(import('../pages/forest')),
     loading: () => <div>Loading...</div>,
 });
 
 const CommonPage = Loadable({
-    loader: () => (import('../pages')),
+    loader: () => withRefreshedStore(import('../pages')),
     loading: () => <div>Loading...</div>,
 })
 

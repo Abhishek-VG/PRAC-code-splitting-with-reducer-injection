@@ -2,6 +2,12 @@ import React, { Component, Fragment } from 'react'
 import ForestImg from './forest.jpg';
 import { connect } from 'react-redux';
 import { forestAction } from '../../action/forestAction';
+
+import ForestReducer from '../../reducers/forestReducer';
+import { storeManager } from '../../utils/storeManager';
+
+storeManager.registerReducers({ ForestReducer })
+
 class Forest extends Component {
     render() {
         return (
