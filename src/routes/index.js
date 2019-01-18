@@ -7,17 +7,17 @@ import Loadable from 'react-loadable';
 
 const Desert = Loadable({
     loader: () => (import('../pages/desert')),
-    loading: () => <div>Loading...</div>,
+    loading: () => <div>Loading D...</div>,
 });
 
 const Forest = Loadable({
     loader: () => (import('../pages/forest')),
-    loading: () => <div>Loading...</div>,
+    loading: () => <div>Loading F...</div>,
 });
 
 const CommonPage = Loadable({
     loader: () => (import('../pages')),
-    loading: () => <div>Loading...</div>,
+    loading: () => <div>Loading CP...</div>,
 })
 
 export const routes = [

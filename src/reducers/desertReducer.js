@@ -3,7 +3,7 @@ const INITIAL_STATE = {
 }
 
 export default function (state = INITIAL_STATE, action) {
-    switch (action.type) {
+      switch (action.type) {
         case 'DESERT':
             return {
                 ...state, desertClicks: ++state.desertClicks
