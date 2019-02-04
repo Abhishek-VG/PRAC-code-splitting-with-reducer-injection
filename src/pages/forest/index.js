@@ -5,7 +5,6 @@ import { forestAction } from '../../action/forestAction';
 
 import ForestReducer from '../../reducers/forestReducer';
 import { storeManager } from '../../utils/storeManager';
-
 storeManager.registerReducers({ ForestReducer })
 
 class Forest extends Component {

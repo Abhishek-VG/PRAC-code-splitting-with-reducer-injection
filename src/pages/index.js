@@ -6,7 +6,7 @@ const forestStyle = {
 }
 const DesertStyle = {
     backgroundColor: '#e1a557', /* Green */
-    border: '1px solid black'
+    border: '2px solid black'
 }
 const commonStyle = {
     border: 'none',

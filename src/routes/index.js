@@ -8,17 +8,17 @@ import { withRefreshedStore } from '../utils/storeManager';
 
 const Desert = Loadable({
     loader: () => withRefreshedStore(import('../pages/desert')),
-    loading: () => <div>Loading...</div>,
+    loading: () => <div>Loading Desert...</div>,
 });
 
 const Forest = Loadable({
     loader: () => withRefreshedStore(import('../pages/forest')),
-    loading: () => <div>Loading...</div>,
+    loading: () => <div>Loading Forest...</div>,
 });
 
 const CommonPage = Loadable({
     loader: () => withRefreshedStore(import('../pages')),
-    loading: () => <div>Loading...</div>,
+    loading: () => <div>Loading Commonpage...</div>,
 })
 
 export const routes = [
